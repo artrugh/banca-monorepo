@@ -1,0 +1,96 @@
+#testimony-container {
+    padding-top: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+    width: -webkit-fill-available;
+    height: 630px;
+
+    @media (max-width: 325px) {
+        height: 760px;
+    }
+
+    #testimony-intro {
+
+        p {
+            margin: 7px 0;
+
+            span {
+                font-family: "HelveticaNeue-Thin";
+                font-size: 1.5em;
+            }
+        }
+
+        p:nth-child(1) {
+            padding-left: 25px;
+        }
+
+        p:nth-child(2) {
+            padding-right: 25px;
+        }
+
+        p:nth-child(3) {
+            span {
+                font-size: 1.7em;
+            }
+        }
+
+        p:nth-child(2),
+        p:nth-child(4) {
+            text-align: end;
+        }
+    }
+
+    main {
+        position: relative;
+        width: 100%;
+
+        .testimony {
+            margin-top: 80px;
+            height: 300px;
+            border: 1px solid rgba(206, 234, 45, 0.3);
+            padding: 0.4em 1em;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+
+            @media (max-width: 500px) {
+                height: 300px;
+            }
+            @media (max-width: 400px) {
+                height: 340px;
+            }
+
+
+            @media (max-width: 325px) {
+                height: 380px;
+            }
+
+            .testimony-img {
+                width: 90px;
+                height: 90px;
+                border-radius: 100%;
+                border: 1px solid $green;
+                position: relative;
+                top: -55px
+            }
+
+            .testimony-description {
+                font-family: "HelveticaNeue-UltraItalic";
+                position: relative;
+                top: -20px;
+                text-align: center;
+
+            }
+
+            .testimony-name {
+                align-self: flex-end;
+                margin-right: 1em;
+                font-size: 18px;
+            }
+        }
+    }
+}
